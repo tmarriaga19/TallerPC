@@ -35,14 +35,13 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
         final Computador p = computadores.get(position);
         holder.foto.setImageResource(p.getFoto());
         holder.marca.setText(p.getMarca());
-        holder.ram.setText(p.getRam());
-        holder.color.setText(p.getColor());
-        holder.sisop.setText(p.getSisOp());
+        //holder.ram.setText(p.getRam());
+        //holder.color.setText(p.getColor());
+       // holder.sisop.setText(p.getSisOp());
 
         holder.v.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                clickListener.onComputadorClick(p);
+            public void onClick(View view) {clickListener.onComputadorClick(p);
             }
         });
     }
@@ -55,25 +54,25 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
     public static class ComputadorViewHolder extends RecyclerView.ViewHolder{
         private ImageView foto;
         private TextView marca;
-        private TextView ram;
-        private TextView color;
-        private TextView sisop;
+         //private TextView ram;
+        //private TextView color;
+       // private TextView sisop;
         private View v;
 
         public ComputadorViewHolder(View itemView){
             super(itemView);
             v = itemView;
             foto = v.findViewById(R.id.imgFoto);
-            marca = v.findViewById(R.id.lblCedula);
-            ram = v.findViewById(R.id.lblNombre);
-            color = v.findViewById(R.id.lblApellido);
-            sisop = v.findViewById(R.id.lblApellido);
+            marca = v.findViewById(R.id.cmbMarca);
+           // ram = v.findViewById(R.id.cmbRam);
+           // color = v.findViewById(R.id.cmbColor);
+           // sisop = v.findViewById(R.id.cmbSisOp);
         }
 
     }
 
-    public interface OnPersonaClickListener{
-        void onPersonaClick(Computador p);
+    public interface OnComputadorClickListener{
+        void onComputadorClick(Computador p);
     }
 
 }

@@ -85,7 +85,6 @@ public class principal extends AppCompatActivity implements AdaptadorComputador.
         b.putInt("tipo",p.getTipo());
         b.putInt("sisOp",p.getSisOp());
         b.putInt("foto",p.getFoto());
-
         i.putExtra("datos",b);
         startActivity(i);
     }

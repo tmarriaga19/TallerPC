@@ -34,10 +34,10 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
     public void onBindViewHolder(ComputadorViewHolder holder, int position) {
         final Computador p = computadores.get(position);
         holder.foto.setImageResource(p.getFoto());
-        holder.marca.setText(p.getMarca());
-        //holder.ram.setText(p.getRam());
-        //holder.color.setText(p.getColor());
-       // holder.sisop.setText(p.getSisOp());
+        holder.marca.setText(holder.OMarca[p.getMarca()]);
+        holder.ram.setText(holder.ORam[p.getRam()]);
+        holder.tipo.setText(holder.OTipo[p.getTipo()]);
+        holder.sisop.setText(holder.OSO[p.getSisOp()]);
 
         holder.v.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,19 +54,25 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
     public static class ComputadorViewHolder extends RecyclerView.ViewHolder{
         private ImageView foto;
         private TextView marca;
-         //private TextView ram;
-        //private TextView color;
-       // private TextView sisop;
+        private TextView ram;
+        private TextView tipo;
+        private TextView sisop;
+        private String[] OMarca,ORam,OTipo,OSO;
         private View v;
 
         public ComputadorViewHolder(View itemView){
             super(itemView);
             v = itemView;
             foto = v.findViewById(R.id.imgFoto);
-            marca = v.findViewById(R.id.cmbMarca);
-           // ram = v.findViewById(R.id.cmbRam);
-           // color = v.findViewById(R.id.cmbColor);
-           // sisop = v.findViewById(R.id.cmbSisOp);
+            marca = v.findViewById(R.id.lblMarca);
+            ram = v.findViewById(R.id.lblRam);
+            tipo = v.findViewById(R.id.lblTipo);
+            sisop = v.findViewById(R.id.lblSisOp);
+
+            OMarca= v.getResources().getStringArray(R.array.marcas);
+            ORam= v.getResources().getStringArray(R.array.rams);
+            OTipo= v.getResources().getStringArray(R.array.tipos);
+            OSO= v.getResources().getStringArray(R.array.sos);
         }
 
     }

@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CrearComputadores" />
+        <activity android:name=".DetalleComputador"></activity>
     </application>
 
 </manifest>

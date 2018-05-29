@@ -60,6 +60,11 @@
     </string-array>
 
     <string name="mensaje_guardado_exitoso">Computador guardado exitosamente!</string>
-
+    <string name="informacion">INFORMACIÓN</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="positivo">Si</string>
+    <string name="negativo">No</string>
+    <string name="pregunta_eliminacion">Está seguro que desea elminar a esta persona?</string>
 
 </resources>

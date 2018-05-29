@@ -26,6 +26,10 @@ public class Computador {
     public Computador() {
     }
 
+    public Computador(String id) {
+        this.id = id;
+    }
+
     public String getId() {
         return id;
     }

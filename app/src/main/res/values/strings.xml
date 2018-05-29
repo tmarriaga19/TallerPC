@@ -65,6 +65,6 @@
     <string name="eliminar">Eliminar</string>
     <string name="positivo">Si</string>
     <string name="negativo">No</string>
-    <string name="pregunta_eliminacion">Está seguro que desea elminar a esta persona?</string>
+    <string name="pregunta_eliminacion">Está seguro que desea elminar este computador?</string>
 
 </resources>

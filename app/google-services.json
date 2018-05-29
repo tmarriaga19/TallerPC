@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "505300034359-83m5tpp2c1vkq9jpud4709vu7fn9tqci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.holamundo.tallerpc",
+            "certificate_hash": "c79a23c3446a9fa78506dab541fb65fad6e49080"
+          }
+        },
+        {
           "client_id": "505300034359-uvgqk0b1pdg5tc95jlromv2u1h4b1ibr.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

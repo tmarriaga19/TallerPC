@@ -32,6 +32,11 @@ public class CrearComputadores extends AppCompatActivity {
         setContentView(R.layout.activity_crear_computadores);
     }
 
+    public String ObtenerCadena(Spinner spn){
+        String item = "";
+        item = spn.getSelectedItem().toString();
+        return item;
+    }
 
 
 

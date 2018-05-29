@@ -6,14 +6,14 @@ package com.holamundo.tallerpc;
 
 public class Computador {
     private String id;
-    private String marca;
+    private int marca;
     private int ram;
-    private String color;
-    private String tipo;
-    private String sisOp;
+    private int color;
+    private int tipo;
+    private int sisOp;
     private int foto;
 
-    public Computador(String id, String marca, int ram, String color, String tipo, String sisOp, int foto) {
+    public Computador(String id, int marca, int ram, int color, int tipo, int sisOp, int foto) {
         this.id = id;
         this.marca = marca;
         this.ram = ram;
@@ -34,11 +34,11 @@ public class Computador {
         this.id = id;
     }
 
-    public String getMarca() {
+    public int getMarca() {
         return marca;
     }
 
-    public void setMarca(String marca) {
+    public void setMarca(int marca) {
         this.marca = marca;
     }
 
@@ -50,27 +50,27 @@ public class Computador {
         this.ram = ram;
     }
 
-    public String getColor() {
+    public int getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(int color) {
         this.color = color;
     }
 
-    public String getTipo() {
+    public int getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(int tipo) {
         this.tipo = tipo;
     }
 
-    public String getSisOp() {
+    public int getSisOp() {
         return sisOp;
     }
 
-    public void setSisOp(String sisOp) {
+    public void setSisOp(int sisOp) {
         this.sisOp = sisOp;
     }
 

@@ -1,4 +1,65 @@
 <resources>
     <string name="app_name">TallerPC</string>
     <string name="action_settings">Settings</string>
+    <string name="titulo">Crear Computador</string>
+    <string name="nomMarca">Marca</string>
+    <string name="nomRam">RAM (GB)</string>
+    <string name="nomColor">Color</string>
+    <string name="nomTipo">Tipo</string>
+    <string name="nomSO">Sist. Operativo</string>
+    <string name="guardar">Guardar</string>
+    <string name="limpiar">LIMPIAR</string>
+
+    <string name="marca0">"Hp"</string>
+    <string name="marca1">"Dell"</string>
+    <string name="marca2">"Lenovo"</string>
+    <string name="marca3">"Apple"</string>
+    <string-array name="marcas">
+        <item>@string/marca0</item>
+        <item>@string/marca1</item>
+        <item>@string/marca2</item>
+        <item>@string/marca3</item>
+    </string-array>
+
+    <string name="ram0">"2"</string>
+    <string name="ram1">"4"</string>
+    <string name="ram2">"6"</string>
+    <string name="ram3">"8"</string>
+    <string-array name="rams">
+        <item>@string/ram0</item>
+        <item>@string/ram1</item>
+        <item>@string/ram2</item>
+        <item>@string/ram3</item>
+    </string-array>
+
+    <string name="color0">"Blanco"</string>
+    <string name="color1">"Gris"</string>
+    <string name="color2">"Negro"</string>
+    <string-array name="colors">
+        <item>@string/color0</item>
+        <item>@string/color1</item>
+        <item>@string/color2</item>
+    </string-array>
+
+    <string name="tipo0">"PC"</string>
+    <string name="tipo1">"Portatil"</string>
+    <string name="tipo2">"AiO"</string>
+    <string-array name="tipos">
+        <item>@string/tipo0</item>
+        <item>@string/tipo1</item>
+        <item>@string/tipo2</item>
+    </string-array>
+
+    <string name="so0">"Windows"</string>
+    <string name="so1">"Linux"</string>
+    <string name="so2">"Mac"</string>
+    <string-array name="sos">
+        <item>@string/so0</item>
+        <item>@string/so1</item>
+        <item>@string/so2</item>
+    </string-array>
+
+    <string name="mensaje_guardado_exitoso">Computador guardado exitosamente!</string>
+
+
 </resources>
